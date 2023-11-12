@@ -92,6 +92,7 @@
                                                     {% elsif child.display_template == 'video' %}
                                                         {% if child.object_location contains 'vimeo' or child.object_location contains 'youtu' %}
                                                             {% include item/child/video-embed.html %}
+                                                
                                                         {% else %}
                                                             {% include item/child/video-player.html %}
                                                         {% endif %}
@@ -99,6 +100,8 @@
                                                         <div class="my-auto">
                                                             {% include item/child/audio-player.html %}
                                                         </div>
+                                                    {% elsif child.display_template == "archive_reader" %}
+                                                        {% include item/child/archive_reader.html%}
                                                     {% elsif child.display_template == 'panorama' %}
                                                         {% include item/child/panorama.html %}
                                                     {% else %}

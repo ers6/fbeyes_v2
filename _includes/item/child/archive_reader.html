@@ -1,0 +1,7 @@
+<!-- embeds an IA book reader object for a child item of a parent item :) -->
+
+
+{% assign archive_id = child.object_location | split: '/' | last %}
+<div class="ratio" style="--bs-aspect-ratio: 115%;">
+    <iframe src="https://archive.org/embed/{{ archive_id }}" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</div>
