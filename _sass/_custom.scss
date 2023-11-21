@@ -2,3 +2,120 @@
     Put your custom SCSS here! 
     This allows you to override any CollectionBuilder or Bootstrap CSS without modifying the base theme files directly.
 */
+
+.btn-primary{
+    background-color: #d77915;
+    border-color: #d77915;
+
+}
+
+.btn-primary:hover{
+    background-color: black;
+    border-color: black;
+
+}
+
+
+
+.nav-link{
+    font-family: American Typewriter, serif;
+    color: yellow;
+}
+.card-title{
+    font-family: American Typewriter, serif;
+}
+.card-header{
+    font-family: American Typewriter, serif;
+}
+
+
+#essay{
+    // padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    border-left-style: groove;
+}
+
+h2{
+    font-family: American Typewriter, serif;
+    color: #d77915;
+}
+
+h1{
+    font-family: American Typewriter, serif;
+    color: #d77915;
+}
+
+#site-header{
+    background-image: url("/assets/img/fbeyes-bg-gray.jpeg");
+    background-position: center;
+    padding: 5%;
+    // background-color: #d77915;
+    // padding: 0pt;
+}
+
+#home-banner-logo{
+    height: 200px;
+    width: 1000px;
+}
+// .display-4{
+//     color: aqua;
+// }
+
+
+#fbeyes-page-title{
+    border-bottom-style: groove;
+    color: #d77915;
+}
+
+// .h-100{
+//     background-image: url("/assets/img/fbeyes-bg-gray.jpeg");
+// }
+// this looks pretty bad but it does change the background image
+// .flex-shrink-0{
+//     background-image: url("/assets/img/fbeyes-bg-gray.jpeg");
+    
+// }
+// .col-md-8 {
+//     background-color: #fff;
+// }
+
+$white:    #fff !default;
+$black:    #000 !default;
+$primary:       #d77915 !default;
+
+$min-contrast-ratio:   4.5 !default;
+$color-contrast-dark:      $black !default;
+$color-contrast-light:     $white !default;
+
+$component-active-color:      $white !default;
+$component-active-bg:         $primary !default;
+
+$link-shade-percentage:                   20% !default;
+$link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
+
+$btn-focus-width:             .25rem !default;
+
+$btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+
+$btn-hover-bg-shade-amount:       15% !default;
+$btn-hover-bg-tint-amount:        15% !default;
+$btn-hover-border-shade-amount:   20% !default;
+$btn-hover-border-tint-amount:    10% !default;
+$btn-active-bg-shade-amount:      20% !default;
+$btn-active-bg-tint-amount:       20% !default;
+$btn-active-border-shade-amount:  25% !default;
+$btn-active-border-tint-amount:   10% !default;
+
+// .container{
+//     background-color: purple;
+// }
+// #title{
+//     font-family: American Typewriter;
+//     color: #000000;
+// }
+// .mt-2{
+//     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+//     color: #d77915;
+// }
