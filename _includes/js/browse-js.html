@@ -184,6 +184,10 @@ function sorting(json_object, key_to_sort_by) {
     json_object.sort(sortByKey);
 };
 
+/* sort by title on page load */
+sorting(items, 'title');
+filterItems(items, query);
+
 /* add sort function on click of sort options */
 var sortFilter = document.querySelector("#sortFilter");
 var sortOptions = document.querySelectorAll(".browse-sort-item");
