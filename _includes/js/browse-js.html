@@ -184,8 +184,8 @@ function sorting(json_object, key_to_sort_by) {
     json_object.sort(sortByKey);
 };
 
-/* sort by title on page load */
-sorting(items, 'title');
+/* sort by last_name on page load */
+sorting(items, 'last_name');
 filterItems(items, query);
 
 /* add sort function on click of sort options */
