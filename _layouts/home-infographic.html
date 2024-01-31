@@ -7,24 +7,25 @@ layout: page
 <div class="row">
 
   <div class="col-md-8">
-    <p>
-      Few institutions seem more opposed than African American literature and J. Edgar Hoover's white-bread Federal Bureau of Investigation. But behind the scenes the FBI's hostility to black protest was energized by fear of and respect for black writing. Drawing on thousands of pages of recently released FBI files, William J. Maxwell’s book <em>F.B. Eyes: How J. Edgar Hoover’s Ghostreaders Framed African American Literature</em> exposes the Bureau's intimate policing of five decades of African American poems, plays, essays, and novels. Starting in 1919, year one of Harlem's renaissance and Hoover's career at the Bureau, secretive FBI "ghostreaders" monitored the latest developments in African American letters. By the time of Hoover's death in 1972, these ghostreaders knew enough to simulate a sinister black literature of their own. The official aim behind the Bureau's close reading was to anticipate political unrest. Yet, as <em>F.B. Eyes</em> reveals, FBI surveillance came to influence the creation and public reception of African American literature in the heart of the twentieth century.</p>
 
+    {% include index/description.html %}
+    {% include index/carousel.html title="Sample Items" %}
     
   </div>
   <div class="col-md-4">  
-    {% include feature/image.html objectid="/assets/img/fbeyes-bk-cover.gif" alt="Cover of William Maxwell's 2015 monograph." caption="Cover of William Maxwell's 2015 monograph."%} 
+
+    {% include index/book-cover.html %}
+
+    {% include index/featured-terms.html field="subject" title="Top Subjects" btn-color="primary" %}
+
+    {% include index/featured-terms.html field="location" title="Locations" btn-color="outline-secondary" %}
+    
+    {% include index/objects.html %}
 
   </div>
   <div class="col-md-12">
-    <p>The <em>F.B. Eyes Digital Archive&nbsp;</em>makes available for the first time a collection of 51 FBI files on prominent African American authors and literary institutions, many of them unearthed through William J. Maxwell's Freedom of Information Act (FOIA) requests. Now part of the public domain as unrestricted U.S. government documents, these once-secret files are arranged on this site as they were at FBI national headquarters, under the names of individual authors and institutions.</p>
-<p class="p1"><span class="s1">The collected files of the authors alone comprise 14,289 pages, or the rough equivalent of forty-seven substantial&nbsp;PhD theses</span>. If this seems a strange comparison, it should be noted that the average length of the 46 author files reaches above 300 pages. FBI ghostreaders genuinely rivaled the productivity, if not always the insight, of their academic peers. The Bureau’s copious files addressing twentieth-century African American writing are documents of troubling state surveillance and sometimes-illegal counterintelligence. But they are also recognizably literary-critical documents, analytical encounters that cannot always resist the pleasures of the enemy text. </p>
-<p>More detailed information on the contents of the files and on the means used to collect them can be found in the introduction to  <a href="https://press.princeton.edu/books/hardcover/9780691130200/fb-eyes"><em>F.B. Eyes</em></a>.</p>
-
-    {% include index/carousel.html title="Explore the Archive" %}
 
     {% include index/data-download.html %}
 
   </div>
 
-</div>
