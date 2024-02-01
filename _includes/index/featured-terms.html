@@ -35,7 +35,7 @@
 {% else %}
 {%- assign terms = site.data[site.metadata] | where_exp: 'item','item.parentid == nil' | map: termsField | join: ";" -%}
 {%- endif -%}
-{%- assign uniqTerms = terms | upcase | split: ";" | array_count_uniq -%}
+{%- assign uniqTerms = terms | titlecase | split: ";" | array_count_uniq -%}
 {% capture topTerms %}
 {% for i in uniqTerms limit: termsMax %}{{ i[0] }};{% endfor %}{% endcapture %}
 {% assign topTerms = topTerms | split: ";" %}
