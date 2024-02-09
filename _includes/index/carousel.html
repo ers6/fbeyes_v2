@@ -91,8 +91,8 @@
         // calculate item image location
         itemImg = carouselItems[i][2];
         // calculate item link
-        if (carouselItems[i][3]){
-            itemLink = '{{ '/items/' | relative_url }}' + carouselItems[i][3] + '.html#' + carouselItems[i][1];}
+        if (carouselItems[i][1]){
+            itemLink = '{{ '/items/' | relative_url }}' + carouselItems[i][1] + '.html#' ;}
         else {
             itemLink = '{{ '/items/' | relative_url }}' + carouselItems[i][1] + '.html';
         }   
