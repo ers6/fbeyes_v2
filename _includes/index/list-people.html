@@ -1,3 +1,4 @@
+
 {% if site.data.theme.browse-child-objects == true %}
 {%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid' -%}
 {% else %}
@@ -49,7 +50,7 @@
         itemLink = '{{ '/items/' | relative_url }}'  + peopleBtns[i][2] + '.html#'; 
         console.log(itemLink);
         // create button
-        this_btn = `<a style="text-align: left;" class="btn btn-lg btn-outline-dark" href="${itemLink}">${peopleBtns[i][0]}</a>`
+        this_btn = `<a style="text-align: left;" class="btn btn-primary card-title h5" href="${itemLink}">${peopleBtns[i][0]}</a>`
         console.log(this_btn)
         these_btns += this_btn;
     };
