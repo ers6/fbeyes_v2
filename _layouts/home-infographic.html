@@ -3,27 +3,29 @@
 layout: page
 ---
 
-{%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid' -%}
+
+{%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid and item.parentid == nil' -%}
+<script>
+/* add items */
+
+const titles = [];
+    {% for item in items %} titles.push(item.title)
+    { {% for f in fields %}{% if item[f.field] %}{{ f.field | escape | jsonify }}:{{ item[f.field] | strip | jsonify }}, {%- endif -%}{%- endfor -%}
+    titles.push(item.title){% unless forloop.last %},{% endunless %}{%- endfor -%}
+
+
+
+</script>
 <div class="row">
 
   <div class="col-md-8">
 
-    {% include index/description.html %}
+    {% include index/fbeyes-site-description.html %}
     {% include index/carousel.html title="Sample Items" %}
-    
+    {% include index/data-download.html %}
   </div>
   <div class="col-md-4">  
-
-    {% include index/book-cover.html %}
     {% include index/list-people.html %}
 
-    {% include index/featured-terms.html field= "title" title="Authors and institutions" btn-color="outline-secondary" %}
-
-
   </div>
-  <div class="col-md-12">
-
-    {% include index/data-download.html %}
-
-  </div>
-
+ 
