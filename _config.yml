@@ -10,7 +10,7 @@
 # site domain, full URL to the production location of your collection
 url: https://ers6.github.io
 # path to location on the domain if necessary e.g. /digital/hjccc
-baseurl: /fbeyes_v2/
+baseurl: /fbeyes_v2
 # location of code, the full url to your github repository
 source-code: https://github.com/CollectionBuilder/collectionbuilder-csv
 
