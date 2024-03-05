@@ -13,8 +13,6 @@ const titles = [];
     { {% for f in fields %}{% if item[f.field] %}{{ f.field | escape | jsonify }}:{{ item[f.field] | strip | jsonify }}, {%- endif -%}{%- endfor -%}
     titles.push(item.title){% unless forloop.last %},{% endunless %}{%- endfor -%}
 
-
-
 </script>
 <div class="row">
 
