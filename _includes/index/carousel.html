@@ -17,7 +17,7 @@
     - "btn-text" - the label used in the link btn to view the carousel item (optional, default "View Item")
     
 {%- endcomment -%}
-
+{%- assign carousel-title = include.title | default: "Explore the Archive" -%}
 {%- assign carousel-max = include.max | default: 55 -%}
 {%- assign btn-color = include.btn-color | default: "primary" -%}
 {%- assign btn-text = include.btn-text | default: "Learn More" -%}
@@ -64,6 +64,7 @@
     /* add item data */
     // title,objectid,last_name,image_thumb/small
     var carouselItems = [ {% for c in carousel-items %}[ {{ c.title | escape | jsonify }}, "{{ c.objectid }}",{% if c.image_small %}{{ c.image_small | relative_url | jsonify }}{% else %}{{ c.image_thumb | relative_url | jsonify }}{% endif %},{{ c.last_name | jsonify }}, "{{ c.lastname }}", "{{ c.parentid }}", {{ c.image_alt_text | default: c.title | escape | jsonify }} ]{% unless forloop.last %}, {% endunless %}{% endfor %}];
+
     /* shuffle items */
     /* carouselItems.sort(function() { return 0.5 - Math.random() });  */
 
