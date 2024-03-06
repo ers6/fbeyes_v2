@@ -86,24 +86,24 @@ function makeCard(obj) {
 }
 
 /* filter items function */
-// function filterItems(arr,q) {
-//     // show loading icon
-//     loadingIcon.classList.remove("d-none");
-//     // dont filter if no q 
-//     if (q=="") { 
-//         var filteredItems = arr; 
-//     } else {
-//         q = q.trim().toUpperCase(); 
-//         // js indexOf filter
-//         var filteredItems = [];
-//         for (var i = 0, len = arr.length; i < len; i++) {
-//             var val = "";
-//         for (var k in arr[i]) { val += arr[i][k] + " "; }
-//             if(val.toUpperCase().indexOf(q) != -1){
-//                 filteredItems.push(arr[i]);
-//             }
-//         }
-//     }
+function filterItems(arr,q) {
+    // show loading icon
+    loadingIcon.classList.remove("d-none");
+    // dont filter if no q 
+    if (q=="") { 
+        var filteredItems = arr; 
+    } else {
+        q = q.trim().toUpperCase(); 
+        // js indexOf filter
+        var filteredItems = [];
+        for (var i = 0, len = arr.length; i < len; i++) {
+            var val = "";
+        for (var k in arr[i]) { val += arr[i][k] + " "; }
+            if(val.toUpperCase().indexOf(q) != -1){
+                filteredItems.push(arr[i]);
+            }
+        }
+    }
     // add number 
     document.querySelector("#numberOf").innerHTML = filteredItems.length + " of {{ items | size }} items";
     
