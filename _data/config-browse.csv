@@ -3,5 +3,5 @@ date,Date,,,Date
 creator,Creator,,,
 subject,,true
 location,,true
-identifier,,,true,Identifier
+identifier,,,true,,
 last_name,,,true,Name
