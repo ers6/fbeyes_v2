@@ -75,7 +75,7 @@ When you have a new FBI file on a person or institution, contact the University 
 - the FBI file(s) on the person(s) saved as a .pdf document. 
 - a record creation csv file(access a template at `/ia_workflow/record-creation-template.csv`) 
 - a metadata csv file (access a template at `/ia_workflow/IA-metadata-sheet-template.csv`) 
-If the library is unable to add the files to IA for you, you will need to create your own Internet Archive account and download the Internet Archive [python library](https://archive.org/developers/internetarchive/). Then, follow the directions outlined in bulk_upload_workflow.md (access at `/ia_workflow/bulk_upload_workflow.md`) 
+If the library is unable to add the files to IA for you, you will need to create your own Internet Archive account and download the Internet Archive [python library](https://archive.org/developers/internetarchive/). Then, follow the directions outlined in bulk_upload_workflow.md (access at `/ia_workflow/bulk_upload_workflow.md`). If you run into problems, consult the IA python library's command line [documentation](https://archive.org/developers/internetarchive/cli.html?highlight=bulk%20upload).
 
 ## Adding new content to the website
 1. Follow the [installation instructions](https://collectionbuilder.github.io/cb-docs/docs/software/) to download and configure the software your need to run Collection Builder CSV. 
