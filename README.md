@@ -1,6 +1,6 @@
 # About this READ_ME 
 
-- **[About F. B. Eyes](https://github.com/ers6/fbeyes_v2/blob/main/README.md#about-f-b-eyes)** offers a brief project history
+- **About F. B. Eyes** offers a brief project history
 - **Customized Collection Builder Elements** documents scripts and pages that have been customized from the CollectionBuilder github package
 - **Updating F. B. Eyes** documents the workflow for adding a new person/institution to the digital archive. 
 # About F. B. Eyes
