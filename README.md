@@ -73,9 +73,9 @@ New files to the F. B. Eyes Digital archive must be added in 2 major steps: firs
 ## Internet Archive Workflow
 When you have a new FBI file on a person or institution, contact the University Libraries to ask them to add it to the [F.B. Eyes collection](https://archive.org/details/FBEyes) in Internet Archive. You will need to supply them with the following: 
 - the FBI file(s) on the person(s) saved as a .pdf document. 
-- a [record creation csv file](https://github.com/ers6/fbeyes_v2/blob/d16248be2abdeac9d60a99387e51d5aac6570f80/ia_workflow/record-creation-template.csv) 
-- a [metadata csv file](https://github.com/ers6/fbeyes_v2/blob/d16248be2abdeac9d60a99387e51d5aac6570f80/ia_workflow/IA-metadata-sheet-template.csv) 
-If the library is unable to add the files to IA for you, you will need to create your own Internet Archive account and download the Internet Archive [python library](https://archive.org/developers/internetarchive/). Then, follow the [bulk upload instructions](https://github.com/ers6/fbeyes_v2/blob/ba5d8fefcacdaa395f7bf02817a40e0557ac4ecb/ia_workflow/bulk_upload_workflow.md) from the IA workflow directory in this repository. 
+- a record creation csv file(access a template at `/ia_workflow/record-creation-template.csv`) 
+- a metadata csv file (access a template at `/ia_workflow/IA-metadata-sheet-template.csv`) 
+If the library is unable to add the files to IA for you, you will need to create your own Internet Archive account and download the Internet Archive [python library](https://archive.org/developers/internetarchive/). Then, follow the directions outlined in bulk_upload_workflow.md (access at `/ia_workflow/bulk_upload_workflow.md`) 
 
 ## Adding new content to the website
 1. Follow the [installation instructions](https://collectionbuilder.github.io/cb-docs/docs/software/) to download and configure the software your need to run Collection Builder CSV. 
