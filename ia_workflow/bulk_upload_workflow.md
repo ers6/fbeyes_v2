@@ -15,5 +15,5 @@ Adapted from Washington University University Libraries bulk upload documentatio
     `$ ia upload --spreadsheet=your_record_creation_sheet.csv`
 - Once ingest is complete, you can clean up your metadata and then ingest that with the following command:
   `$ ia metadata --spreadsheet=your_metadata_sheet.csv`
-Check that ingest worked properly by visiting Internet Archive. 
+- Check that ingest worked properly by visiting Internet Archive. 
   
