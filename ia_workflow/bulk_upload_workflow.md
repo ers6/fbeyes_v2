@@ -1,5 +1,6 @@
 # Bulk Upload Workflow 
 Adapted from Washington University University Libraries bulk upload documentation.
+- Ensure that you have downloaded the [Internet Archive python library](https://archive.org/developers/index.html). 
 - Sign into your Internet Archive account via terminal. To do so, open your terminal and enter the following: 
     `ia configure`
 - When prompted, enter the email address and password for your Internet Archive account.
