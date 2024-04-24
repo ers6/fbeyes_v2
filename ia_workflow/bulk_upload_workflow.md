@@ -10,7 +10,7 @@ Adapted from Washington University University Libraries bulk upload documentatio
     `for i in *; do zip -r "$i.zip" $i; done;` 
 
 - Add “_images” to the end of your zip files and move it to the #4_zip folder
-- Copy the record-creation-template spreadsheet and populate to create the records for each item. You do not need full metadata at this stage, just select fields.
+- Copy your completed [record-creation-template](ia_workflow/record-creation-template.csv) spreadsheet and populate to create the records for each item. You do not need full metadata at this stage, just select fields.
 - In terminal, navigate to the directory and run with uploading.csv being the name of your .csv:
     `$ ia upload --spreadsheet=your_record_creation_sheet.csv`
 - Once ingest is complete, you can clean up your metadata and then ingest that with the following command:
