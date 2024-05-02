@@ -56,7 +56,7 @@ The archive_reader.html display template isolates the Internet Archive id for an
 
 ## Home Page Elements
 
-The homepage of FBEyes has a 2 custom elements not built in with CollectionBuilder: a vertical navigation bar listing all the people/institutions included in the archive (list-people.html) and an image of the book's cover (book-cover.html). Other built in elements have been customized. 
+The homepage of FBEyes has 2 custom elements not built in with CollectionBuilder: a vertical navigation bar listing all the people/institutions included in the archive (list-people.html) and an image of the book's cover (book-cover.html). Other built in elements have been customized. 
 
 ### Custom Built Elements
 #### list-people.html 
